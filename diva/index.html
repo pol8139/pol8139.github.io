@@ -15,43 +15,64 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="page-header">
-				<h1>"DIVAアーケードコントローラの創りかた"のデータ集</h1>
+			<div class="backgroundImageTransparent">
+				<div class="page-header">
+					<h1>【夏コミ当落待ち】"DIVAアーケードコントローラの創りかた"のアレコレ</h1>
+				</div>
+				<p>
+					<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm32448697" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【DIVA FT】</a></iframe>
+				</p>
+				<h2>夏コミについて</h2>
+					<p>2018年夏のコミックマーケット94に、このコントローラの制作方法に関する薄い本を出します(受かったら)。主な内容としては</p>
+					<ul>
+						<li>PSoCでタッチセンサを使う</li>
+						<li>中国からパーツを直輸入する</li>
+						<li>フォトインタラプタで無接点スイッチをつくる</li>
+						<li>GIMXで非公式コントローラをPS4で使う</li>
+						<li>WS2812Bを使ってタッチスライダーを光らせる(ここ動画で出てないところです)</li>
+					</ul>
+					<p>といった感じ。受付確認葉書を見る限り書類不備はなかったようですが、果たして受かるのでしょうか...?</p>
+				<h2>内部リンク</h2>
+				<p>
+					<ul>
+						<li><a href="diva_block.png">ブロック図</a></li>
+						<li><a href="diva_zumen.emf">天板の図面</a></li>
+						<li><a href="diva_kairo.emf">回路図</a></li>
+						<li><a href="buttons.pdf">目コピしたボタンのイラスト</a></li>
+						<li><a href="shirouto.vsq">あの～私この分野は素人なんですけど(Miku V2 original用vsqファイル)</a></li>
+					</ul>
+				</p>
+				<h2>外部リンク</h2>
+				<p>
+					<ul>
+						<li><a href="https://github.com/pol8139/CY8CKIT-049_touch_to_serial" target="_blank">pol8139/CY8CKIT-049_touch_to_serial(GitHub)</a></li>
+						<li><a href="https://github.com/pol8139/leonardo_ser_to_key" target="_blank">pol8139/leonardo_ser_to_key(GitHub)</a></li>
+						<li><a href="https://gist.github.com/pol8139/fc1f50838f59283ac1af2f2c1345a168" target="_blank">gimxで自作DIVAアケコンを使用するときのコンフィグファイル(Gist)</a></li>
+					</ul>
+				</p>
+				<h2>使用ソフト／ハード</h2>
+				<p>
+					<ul>
+						<li><a href="http://japan.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits" target="_blank">PSoC® 4 CY8CKIT-049 4xxx Prototyping Kits | Cypress Semiconductor</a></li>
+						<li><a href="https://www.sparkfun.com/products/12640" target="_blank">Pro Micro - 5V/16MHz - DEV-12640 - SparkFun Electronics</a></li>
+						<li><a href="https://gimx.fr/wiki/index.php?title=Main_Page" target="_blank">GIMX</a></li>
+					</ul>
+				</p>
+				<h2>エアリプ</h2>
+				<h3>費用について</h3>
+				<p>ボタン×4とPro Microをebayで購入したことによって安く仕上がってます。また「5000円」の中には、交通費とか、予備実験として買ったパーツとか、そういったものは含まれてません。これを売り物にするには、よりまともなパーツを使用するとか、もうちょっと保守性・信頼性の高い設計にするとか、そうなると1号さんの言うような10万円といった価格もあまりおかしくは無いのではと思います。</p>
+				<h3>遅延について</h3>
+				<p>GIMX由来のものがほとんどで、DS4でのプレイ時と比べて体感0.5フレーム程度コントローラの反応が遅れている感じです。揺らぎはあまり感じません。DIVAは1ms単位で判定調整できるので、エンジョイ勢としてはほぼ無問題といえます。</p>
+				<h3>ネタが被った方との差異</h3>
+				<p>ボタン押下検出にマイクロスイッチではなくフォトインタラプタを使い実機と同じような無接点スイッチにしている・実機にないボタンをあえて実装していない(STARTボタンをコントローラ横に移動するなど若干アレンジありますが)・スライダーの個々のセンサーのサイズを実機とほぼ同じにした・それに伴いセンサー数が実機により近い(実機:32、被りの方:24、自分:30)・認証済みコントローラ乗っ取りをしていない、など?</p>
+				<h3>欲しい!</h3>
+				<p>つくりましょう。cf:<a href='http://panora.tokyo/36613/' target='_blank'>初音ミクは、今もクリエイターを刺激する天使だ──「みくちゃ」開発者に聞くTHETA MIKUアプリへの情熱</a>、<a href='https://www.oricon.co.jp/news/2096486/full/' target='_blank'>初音ミク10周年、“生みの親”語る「命なきものに魂を吹き込む」文化 | ORICON NEWS</a>(より引用:"伊藤氏はインタビューの最後、クリエイターたちに向け「これからもずっと何かを創り続けてほしい」と強く訴えた")</p>
+				<footer>
+				<p>
+					<a href="../">../</a>
+				</p>
+				</footer>
 			</div>
-			<p>
-				<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm32448697" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【DIVA FT】</a></iframe>
-			</p>
-			<h2>内部リンク</h2>
-			<p>
-				<ul>
-					<li><a href="diva_block.png">ブロック図</a></li>
-					<li><a href="diva_zumen.emf">天板の図面</a></li>
-					<li><a href="diva_kairo.emf">回路図</a></li>
-					<li><a href="buttons.pdf">目コピしたボタンのイラスト</a></li>
-					<li><a href="shirouto.vsq">あの～私この分野は素人なんですけど(Miku V2 original用vsqファイル)</a></li>
-				</ul>
-			</p>
-			<h2>外部リンク</h2>
-			<p>
-				<ul>
-					<li><a href="https://github.com/pol8139/CY8CKIT-049_touch_to_serial" target="_blank">pol8139/CY8CKIT-049_touch_to_serial(GitHub)</a></li>
-					<li><a href="https://github.com/pol8139/leonardo_ser_to_key" target="_blank">pol8139/leonardo_ser_to_key(GitHub)</a></li>
-					<li><a href="https://gist.github.com/pol8139/fc1f50838f59283ac1af2f2c1345a168" target="_blank">gimxで自作DIVAアケコンを使用するときのコンフィグファイル(Gist)</a></li>
-				</ul>
-			</p>
-			<h2>使用ソフト／ハード</h2>
-			<p>
-				<ul>
-					<li><a href="http://japan.cypress.com/documentation/development-kitsboards/psoc-4-cy8ckit-049-4xxx-prototyping-kits" target="_blank">PSoC® 4 CY8CKIT-049 4xxx Prototyping Kits | Cypress Semiconductor</a></li>
-					<li><a href="https://www.sparkfun.com/products/12640" target="_blank">Pro Micro - 5V/16MHz - DEV-12640 - SparkFun Electronics</a></li>
-					<li><a href="https://gimx.fr/wiki/index.php?title=Main_Page" target="_blank">GIMX</a></li>
-				</ul>
-			</p>
-			<footer>
-			<p>
-				<a href="../">../</a>
-			</p>
-			</footer>
 		</div>
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 		<!-- <script src="js/bootstrap.min.js"></script> -->
