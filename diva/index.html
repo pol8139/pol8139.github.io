@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>"DIVAアーケードコントローラの創りかた"のデータ集</title>
+		<title>【夏コミ1日目西も38a】"DIVAアーケードコントローラの創りかた"について</title>
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/main.css" rel="stylesheet">
 		<!--[if lt IE 9]>
@@ -12,26 +12,43 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@PoL8139" />
+		<meta property="og:url" content="http://pol.dip.jp/diva/" />
+		<meta property="og:title" content="【夏コミ1日目西も38a】"DIVAアーケードコントローラの創りかた"について" />
+		<meta property="og:description" content="2018年夏のコミックマーケット94に、このコントローラの制作方法に関する薄い本を出します！" /> 
+		<meta property="og:image" content="http://pol.dip.jp/diva/DSC_0385.jpg" />
 	</head>
 	<body>
 		<div class="container">
 			<div class="backgroundImageTransparent">
 				<div class="page-header">
-					<h1>【夏コミ当落待ち】"DIVAアーケードコントローラの創りかた"のアレコレ</h1>
+					<h1>【夏コミ1日目西も38a】"DIVAアーケードコントローラの創りかた"について</h1>
 				</div>
 				<p>
 					<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm32448697" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【DIVA FT】</a></iframe>
 				</p>
-				<h2>夏コミについて</h2>
-					<p>2018年夏のコミックマーケット94に、このコントローラの制作方法に関する薄い本を出します(受かったら)。主な内容としては</p>
+				<h2>夏コミだ</h2>
+					<p>2018年夏のコミックマーケット94に、このコントローラの製作方法に関する薄い本を出します！ 動画の内容をより詳しく掘り下げたり端折った部分を付け加えたりした、どちらかというと回路・マイコンのビギナー向け解説書となります。<!--作れてしまう人は動画の内容だけでできてしまいますし...-->主な内容としては</p>
 					<ul>
-						<li>PSoCでタッチセンサを使う</li>
+						<li>ArduinoとPSoCそれぞれの環境構築</li>
+						<li>正しくケチる工具</li>
 						<li>中国からパーツを直輸入する</li>
+						<li>ATmega32U4(Pro Micro)でHIDゲームコントローラをつくる</li>
+						<li>なぜLEDをマイコンに直結してはいけない(場合がある)のか</li>
 						<li>フォトインタラプタで無接点スイッチをつくる</li>
-						<li>GIMXで非公式コントローラをPS4で使う</li>
-						<li>WS2812Bを使ってタッチスライダーを光らせる(ここ動画で出てないところです)</li>
+						<li>ソースコードを書いて理解する静電容量タッチセンサの仕組み</li>
+						<li>PSoCでタッチセンサ(CapSense)を使う</li>
+						<li>I<sup>2</sup>C通信超入門</li>
+						<li>GIMXを活用して非公式コントローラをPS4で使う</li>
+						<li>WS2812Bを使ってタッチスライダーを光らせる</li>
 					</ul>
-					<p>といった感じ。受付確認葉書を見る限り書類不備はなかったようですが、果たして受かるのでしょうか...?</p>
+					<p>といった感じ。</p>
+					<p>価格・分量はまだまだわかりませんが、<strong>B5、50~80ページ、700~1000円</strong>(ざっくりしすぎですが)あたりになると思います。(頼むから間に合ってくれ～)</p>
+					<p>Webカタログは以下よりどうぞ。</p>
+					<p><a href='https://webcatalog-free.circle.ms/Circle/13936553' target='_blank'>ぽる研 | Comike Web Catalog</a></p>
+					<p><a href='https://webcatalog-free.circle.ms/Map#13936553/day=Day1/hall=w12/scale=1' target='_blank'>会場MAP Day1</a></p>
+					<p><strong>1日目(金曜日)西地区“も”ブロック－38a</strong> にてお待ちしております。</p>
 				<h2>内部リンク</h2>
 				<p>
 					<ul>
@@ -59,14 +76,20 @@
 					</ul>
 				</p>
 				<h2>エアリプ</h2>
+				<p>twitterやニコニコ動画のコメントなどで見かけた意見に答えます</p>
 				<h3>費用について</h3>
 				<p>ボタン×4とPro Microをebayで購入したことによって安く仕上がってます。また「5000円」の中には、交通費とか、予備実験として買ったパーツとか、そういったものは含まれてません。これを売り物にするには、よりまともなパーツを使用するとか、もうちょっと保守性・信頼性の高い設計にするとか、そうなると1号さんの言うような10万円といった価格もあまりおかしくは無いのではと思います。</p>
 				<h3>遅延について</h3>
 				<p>GIMX由来のものがほとんどで、DS4でのプレイ時と比べて体感0.5フレーム程度コントローラの反応が遅れている感じです。揺らぎはあまり感じません。DIVAは1ms単位で判定調整できるので、エンジョイ勢としてはほぼ無問題といえます。</p>
-				<h3>ネタが被った方との差異</h3>
-				<p>ボタン押下検出にマイクロスイッチではなくフォトインタラプタを使い実機と同じような無接点スイッチにしている・実機にないボタンをあえて実装していない(STARTボタンをコントローラ横に移動するなど若干アレンジありますが)・スライダーの個々のセンサーのサイズを実機とほぼ同じにした・それに伴いセンサー数が実機により近い(実機:32、被りの方:24、自分:30)・認証済みコントローラ乗っ取りをしていない、など?</p>
+				<!--<h3>ネタが被った方との差異</h3>
+				<p>ボタン押下検出にマイクロスイッチではなくフォトインタラプタを使い実機と同じような無接点スイッチにしている・実機にないボタンをあえて実装していない(STARTボタンをコントローラ横に移動するなど若干アレンジありますが)・スライダーの個々のセンサーのサイズを実機とほぼ同じにした・それに伴いセンサー数が実機により近い(実機:32、被りの方:24、自分:30)・認証済みコントローラ乗っ取りをしていない、など?</p>-->
 				<h3>欲しい!</h3>
-				<p>つくりましょう。cf:<a href='http://panora.tokyo/36613/' target='_blank'>初音ミクは、今もクリエイターを刺激する天使だ──「みくちゃ」開発者に聞くTHETA MIKUアプリへの情熱</a>、<a href='https://www.oricon.co.jp/news/2096486/full/' target='_blank'>初音ミク10周年、“生みの親”語る「命なきものに魂を吹き込む」文化 | ORICON NEWS</a>(より引用:"伊藤氏はインタビューの最後、クリエイターたちに向け「これからもずっと何かを創り続けてほしい」と強く訴えた")</p>
+				<!--<p>つくりましょう。cf:<a href='http://panora.tokyo/36613/' target='_blank'>初音ミクは、今もクリエイターを刺激する天使だ──「みくちゃ」開発者に聞くTHETA MIKUアプリへの情熱</a>、<a href='https://www.oricon.co.jp/news/2096486/full/' target='_blank'>初音ミク10周年、“生みの親”語る「命なきものに魂を吹き込む」文化 | ORICON NEWS</a>(より引用:"伊藤氏はインタビューの最後、クリエイターたちに向け「これからもずっと何かを創り続けてほしい」と強く訴えた")</p>-->
+				<p>申し訳ありませんが製作依頼は全てお断りしております。</p>
+				<h3>作りたいが何から始めたらいいかわからない</h3>
+				<p>動画内に出てきたわからない単語全部を全部google検索します。(todo: おすすめの本の紹介)</p>
+				<h3>なぜ指と銅箔の間にプラ板が挟まってるのにタッチ検出できてるの?</h3>
+				<p>静電容量方式によるタッチセンサなので必ずしも導体と人体が接触する必要はないのです。(ちゃんと説明したいけど時間ないなあ)</p>
 				<footer>
 				<p>
 					<a href="../">../</a>

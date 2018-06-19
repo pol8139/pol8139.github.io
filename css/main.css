@@ -8,9 +8,36 @@ h1 {
 h2 {
 	font-size: 35px;
 }
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
 body {
 	font-family: Meiryo, sans-serif;
+	font-size: 18px;
+}
+ul {
 	font-size: 21px;
+}
+footer {
+	padding-top: 20px;
+	border-top-style: solid;
+	border-top-color: #36C6C3;
+	border-top-width: 2px;
+}
+.container {
+	background-image: url("../pol_shomen_for_round_crop_400.png");
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: right bottom;
+}
+.backgroundImageTransparent{
+	background-color: rgba(255, 255, 255, 0.7);
 }
 .sushirestaurant {
 	width: 300px;
