@@ -12,6 +12,7 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="//twemoji.maxcdn.com/2/twemoji.min.js?11.3"></script>
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@PoL8139" />
 		<meta property="og:url" content="http://pol.dip.jp/diva/" />
@@ -26,7 +27,8 @@
 					<h1><a href="../">ぽる研</a>/【C94金曜西も38a】"DIVAアーケードコントローラの創りかた"について</h1>
 				</div>
 				<p>
-					<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm32448697" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【DIVA FT】</a></iframe>
+					<!--<iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm32448697" scrolling="no" style="border:solid 1px #ccc;" frameborder="0"><a href="http://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【DIVA FT】</a></iframe>-->
+					<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm32448697/script?w=640&h=360"></script><noscript><a href="https://www.nicovideo.jp/watch/sm32448697">【スライダー付】DIVAアーケードコントローラの創りかた【C94】</a></noscript>
 				</p>
 				<!--<h2>夏コミだ</h2>
 					<p>2018年夏のコミックマーケット94に、このコントローラの製作方法に関する薄い本を出します！ 動画の内容をより詳しく掘り下げたり端折った部分を付け加えたりした、どちらかというと回路・マイコンのビギナー向け解説書となります。主な内容としては</p>
@@ -50,6 +52,12 @@
 					<h3>本文内に登場したリンク集</h3>
 						<p><a href='links'>こちら</a>から。</p>
 						<p>ユーザー名diva、パスワードは"200gバネ"のバネ定数(34pを参照)です</p>
+				<h2>正誤表</h2>
+				<p>2018/10/28発行分までに以下の通り訂正があります。</p>
+					<table class="table">
+						<tr><th>ページ</th><th>❌</th><th>✔</th></tr>
+						<tr><td>62</td><td>・Pro Micro(GIMXアダプタ)をPS4に接続します。<br>・USB-UARTアダプタをPCに接続します。</td><td>・USB-UARTアダプタをPCに接続します。<br>・Pro Micro(GIMXアダプタ)をPS4に接続します。</td></tr>
+					</table>
 				<h2>ファイル集</h2>
 				<p>
 					<ul>
@@ -60,7 +68,7 @@
 						<li><a href="shirouto.vsq">あの～私この分野は素人なんですけど(Miku V2 original用vsqファイル)</a></li>
 						<li><a href="https://github.com/pol8139/CY8CKIT-049_touch_to_serial" target="_blank">pol8139/CY8CKIT-049_touch_to_serial(GitHub)</a></li>
 						<li><a href="https://github.com/pol8139/leonardo_ser_to_key" target="_blank">pol8139/leonardo_ser_to_key(GitHub)</a> 本の中で明記を忘れてしまいましたが最終的にPro Microに書き込むスケッチがこれです</li>
-						<li><a href="https://gist.github.com/pol8139/fc1f50838f59283ac1af2f2c1345a168" target="_blank">gimxで自作DIVAアケコンを使用するときのコンフィグファイル(Gist)</a></li>
+						<li><a href="https://gist.github.com/pol8139/b45cab3076d4c8f9225bbc5ec26424a6" target="_blank">gimxで自作DIVAアケコンを使用するときのコンフィグファイル(Gist)</a></li>
 					</ul>
 				</p>
 				<h2>使用ソフト／ハード</h2>
@@ -77,12 +85,13 @@
 				<p>ボタン×4とPro Microをebayで購入したことによって安く仕上がってます。また「5000円」の中には、交通費とか、予備実験として買ったパーツとか、そういったものは含まれてません。これを売り物にするには、よりまともなパーツを使用するとか、もうちょっと保守性・信頼性の高い設計にするとか、そうなると1号さんの言うような10万円といった価格もあまりおかしくは無いのではと思います。</p>
 				<h3>遅延について</h3>
 				<p>GIMX由来のものがほとんどで、DS4でのプレイ時と比べて体感0.5フレーム程度コントローラの反応が遅れている感じです。揺らぎはあまり感じません。このゲームは1ms単位で判定調整できるので、エンジョイ勢<!--ここでは☆8.5~9クリアが精一杯の人、の意-->としてはほぼ無問題といえます。燕返しとかスコアタとかは多分無理かと...</p>
-				<h3>欲しい!</h3>
+				<h3>作って欲しい!</h3>
 				<p>申し訳ありませんが製作依頼は全てお断りしております。</p>
 				<h3>作りたいが何から始めたらいいかわからない</h3>
-				<p>動画内に出てきたわからない単語を全部google検索します。(todo: おすすめの本の紹介)</p>
+				<p>動画内に出てきたわからない単語を全部google検索します。</p>
 				<h3>なぜ指と銅箔の間にプラ板が挟まってるのにタッチ検出できてるの?</h3>
-				<p>静電容量方式によるタッチセンサなので必ずしも導体と人体が接触する必要はないのです。(詳しくは新刊を...)</p>
+				<p>静電容量方式によるタッチセンサなので必ずしも導体と人体が接触する必要はないのです。(詳しくは本を...)</p>
+				<p><a href="http://www.popls.co.jp" target="_blank"><img src="../poplsbn2.gif"></a></p>
 				<footer>
 				<p>
 					<a href="../">../</a>
@@ -90,6 +99,9 @@
 				</footer>
 			</div>
 		</div>
+		<script>
+			twemoji.parse(document.body);
+		</script>
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 		<!-- <script src="js/bootstrap.min.js"></script> -->
 	</body>

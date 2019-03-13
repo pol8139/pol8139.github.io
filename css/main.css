@@ -6,7 +6,7 @@ h1 {
 	font-size: 42px;
 }
 h2 {
-	font-size: 37px;
+	font-size: 39px;
 }
 h3 {
 	font-size: 30px;
@@ -22,15 +22,19 @@ h3,
 .h3,
 h4,
 .h4 {
-  margin-top: 40px;
-  margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 10px;
 }
 body {
 	font-family: Meiryo, sans-serif;
 	font-size: 18px;
 }
 ul {
-	font-size: 21px;
+	font-size: 18px;
+}
+dd {
+	margin-left: 18px;
+	margin-bottom: 9px;
 }
 footer {
 	padding-top: 20px;
@@ -39,10 +43,10 @@ footer {
 	border-top-width: 2px;
 }
 .container {
-	background-image: url("../pol_shomen_for_round_crop_400.png");
+	background-image: url("../apple-touch-icon.png");
 	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: right 0px bottom 100px;
+	background-position: right 20px bottom 100px;
 }
 .backgroundImageTransparent{
 	background-color: rgba(255, 255, 255, 0.7);
@@ -76,4 +80,14 @@ footer {
 	to {
 		transform: translateX(-75px);
 	}
+}
+img.emoji {
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.12em;
+}
+h1 img.emoji {
+	margin-left: 9px;
+	margin-right: 9px;
 }
