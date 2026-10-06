@@ -14,16 +14,7 @@ body {
 }
 
 body {
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Helvetica Neue",
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    "Yu Gothic",
-    YuGothic,
-    Meiryo,
-    sans-serif;
+  font-family: sans-serif;
 
   color: #222;
   background: #f5f5f5;
@@ -70,13 +61,10 @@ body {
 ======================================== */
 
 .profile-image {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
 
   margin: 0 auto 20px;
-
-  overflow: hidden;
-  border-radius: 50%;
 }
 
 .profile-image img {
@@ -84,8 +72,8 @@ body {
   height: 100%;
 
   display: block;
-
-  object-fit: cover;
+  
+  image-rendering: pixelated;
 }
 
 
@@ -102,7 +90,7 @@ body {
 }
 
 .profile-text {
-  margin: 12px 0 0;
+  margin: 12px 0 ;
 
   color: #666;
 
@@ -164,7 +152,7 @@ body {
   color: #222;
   background: #fff;
 
-  border: 1px solid #e8e8e8;
+  border: 1px solid #aaa;
   border-radius: 14px;
 
   text-align: left;
@@ -233,8 +221,8 @@ footer {
   }
 
   .profile-image {
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
   }
 
   .profile h1 {
@@ -274,8 +262,8 @@ footer {
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .profile h1 {
